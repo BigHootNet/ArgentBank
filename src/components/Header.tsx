@@ -9,7 +9,7 @@ const Header: React.FC<{ isAuthenticated: boolean, userName?: string }> = ({ isA
         <img className="main-nav-logo-image" src={logo} alt="Argent Bank Logo" />
         <h1 className="sr-only">Argent Bank</h1>
       </Link>
-      <div>
+      <div className="main-nav-items">
         {isAuthenticated ? (
           <>
             <Link className="main-nav-item" to="/profile">
